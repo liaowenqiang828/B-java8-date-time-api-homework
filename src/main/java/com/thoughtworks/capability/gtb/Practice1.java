@@ -13,6 +13,7 @@ import java.time.temporal.ChronoUnit;
 public class Practice1 {
   private static int Year = LocalDate.now().getYear();
   private static final LocalDate CURRENT_LABOR_DAY = LocalDate.of(Year, 5,1);
+
   public static long getDaysBetweenNextLaborDay(LocalDate date) {
     if (date.isAfter(CURRENT_LABOR_DAY)) {
       LocalDate nextLaborDay = CURRENT_LABOR_DAY.plusYears(1);
